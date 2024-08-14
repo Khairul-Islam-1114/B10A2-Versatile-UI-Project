@@ -239,3 +239,56 @@ text-align: left;
 
 
 /* Home Part CSS End */
+
+/* Change Habits Part CSS Start */
+
+#change-habits{
+    margin: 6.25em auto;
+    width: 90%;
+}
+
+.change-habits-title{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+}
+
+.change-habits-subtitle{
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    margin: 14px 0;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 3.3em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.card-img{
+    border-radius: 50%;
+}
+
+.card-title{
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.card-subtitle{
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+}
+
+/* Change Habits Part CSS End */
