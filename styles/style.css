@@ -362,3 +362,55 @@ text-align: left;
 }
 
 /* Run Extra Miles Part CSS End */
+
+
+/* Team Part CSS Start */
+
+#team{
+    width: 90%;
+    margin: 0 auto 6.25em;
+
+}
+
+.team-member-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    background:rgba(0, 0, 0, 0.25);
+    padding: 1.25rem;
+    border-radius: 18px;
+}
+
+.trainer{
+    width: 23rem;
+    height: 20rem;
+    position: relative;
+}
+
+
+.trainer-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+
+}
+
+
+.trainer-name, .trainer-deg{
+    position: absolute;
+    margin-left: 1.5rem;
+}
+
+.trainer-name{
+    bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.trainer-deg{
+    bottom: 0.25rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* Team Part CSS End */
