@@ -479,3 +479,85 @@ hr{
 
 /* Footer Part CSS End */
 
+/* Challange Part */
+
+#BMI-calculator-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2d2d2d;
+    margin: 0 auto 6.25em;
+
+
+}
+
+.bmi-chart, .bmi-calculator {
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.bmi-title{
+    font-size: 28px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 52px;
+}
+
+.bmi-subtitle{
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 20px;
+
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #444;
+}
+
+th{
+    color: #ffffff;
+}
+
+td{
+    color: rgba(255, 255, 255, 0.65);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+}
+
+.calculate-btn {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f04e23;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e04420;
+}
