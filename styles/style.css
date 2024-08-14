@@ -247,14 +247,14 @@ text-align: left;
     width: 90%;
 }
 
-.change-habits-title{
+.change-habits-title, .team-title{
     color: #ffffff;
     font-weight: 900;
     font-size: 3em;
     text-align: center;
 }
 
-.change-habits-subtitle{
+.change-habits-subtitle, .team-subtitle{
     color: rgba(255, 255, 255, 0.65);
     text-align: center;
     margin: 14px 0;
@@ -375,17 +375,19 @@ text-align: left;
 .team-member-container{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1.25rem;
     background:rgba(0, 0, 0, 0.25);
     padding: 1.25rem;
     border-radius: 18px;
+    margin-top: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .trainer{
-    width: 23rem;
-    height: 20rem;
+    width: 20rem;
+    height: 16rem;
     position: relative;
 }
 
@@ -406,11 +408,74 @@ text-align: left;
 .trainer-name{
     bottom: 1.5rem;
     color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .trainer-deg{
     bottom: 0.25rem;
     color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
 }
 
 /* Team Part CSS End */
+
+/* Footer Part CSS Start */
+
+footer{
+    width: 90%;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title{
+    color: rgba(230, 83, 60, 1);
+    font-size: 4.25rem;
+    font-weight:900;
+    font-style: italic;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+}
+
+.footer-subtitle{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight:bold;
+}
+
+footer ul{
+    color: rgba(255, 255, 255, 0.65);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer ul li{
+    list-style: none;
+
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top div:first-of-type{
+    width: 40%;
+}
+
+hr{
+    margin: 5rem 0 2rem;
+}
+
+.copyright{
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+}
+
+/* Footer Part CSS End */
+
