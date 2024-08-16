@@ -4,20 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
 
 /* Common CSS Part Start */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgba(0, 0, 0, 1);
     max-width: 1140px;
     margin: auto;
     width: 100%;
 }
 
-main{
+main {
     max-width: 1140px;
     margin: 0 auto;
     width: 100%;
@@ -30,6 +31,7 @@ main{
 
 /* Header Part CSS Start */
 header{
+    max-width: 1140px;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.25);
     padding-top:10px;
@@ -52,10 +54,10 @@ nav{
 
 nav ul{
     display: flex;
-    width:fit-content;
+    width:40vw;
     height: 100%;
     gap: 50px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     border: 0.5px solid rgba(255, 255, 255, 0.25);
     border-radius: 25px;
@@ -71,12 +73,19 @@ nav ul{
 nav ul li{
     list-style: none;
     padding: 0.8rem 1rem;
-    width: 4rem;
+    width: 7rem;
     text-align: center;
     
 }
 
-nav ul li:hover{ background-color: #E6533C; border-radius: 25px; font-weight: 700; -webkit-border-radius: 25px; -moz-border-radius: 25px; -ms-border-radius: 25px; -o-border-radius: 25px;
+nav ul li:hover{ 
+    background-color: #E6533C;
+    border-radius: 25px;
+    font-weight: 700;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 nav ul li a{
@@ -93,13 +102,28 @@ nav ul li a{
     font-weight:900;
     font-style: italic;
 }
+
+.hidden-if-fullview {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+
+}
+
 /* Header Part CSS End */
 
 
 /* Home Part CSS Start */
 
-#home{
+#home {
     display: flex;
+    max-width: 1140px;
     width: 90%;
     margin: auto;
     justify-content: space-between;
@@ -108,56 +132,56 @@ nav ul li a{
 }
 
 
-.home-left{
+.home-left {
     width: 599px;
 }
 
-.home-title{
-width:520px;
-color: rgba(255, 255, 255, 1);
-position: relative;
-text-align: left;
+.home-title {
+    width: 520px;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    text-align: left;
 }
 
-.big-text{
+.big-text {
     font-size: 5em;
-    font-weight: bolder;
+    font-weight: 900;
     margin: 0;
     line-height: 1.2em;
 }
 
-.floating-text{
-  font-family: "Grey Qo", cursive;
-  font-weight:100;
-  font-style:italic;
-  position: relative;
-  font-size: 1.75em;
-  margin: 0;
-  z-index: -1;
+.floating-text {
+    font-family: "Grey Qo", cursive;
+    font-weight: 100;
+    font-style: italic;
+    position: relative;
+    font-size: 1.75em;
+    margin: 0;
+    z-index: -1;
 }
 
-.big-text:first-of-type{
+.big-text:first-of-type {
     margin-bottom: -0.25em;
 }
 
-.big-text:last-of-type{
+.big-text:last-of-type {
     margin-top: -0.25em;
 }
 
-.home-subtitle{
+.home-subtitle {
     width: 520px;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
     margin: 1.75em 0;
 }
 
-.home-right{
+.home-right {
     width: 349px;
     height: 580px;
     position: relative;
 }
 
-.orange-btn{
+.orange-btn {
     background-color: #E6533C;
     border-radius: 50px;
     padding: 16px 40px;
@@ -169,7 +193,7 @@ text-align: left;
     margin-right: 14px;
 }
 
-.download-btn{
+.download-btn {
     border-radius: 50px;
     padding: 16px 40px;
     font-size: 18px;
@@ -180,26 +204,24 @@ text-align: left;
     background: transparent;
 }
 
-.play-btn{
+.play-btn {
     position: absolute;
     width: 40px;
-    background-color: #ffffff;
     top: 50%;
     bottom: 50%;
-    left: -55%;
-    border-radius: 50%;
+    left: -30%;
 }
 
-.home-img{
+.home-img {
     height: 100%;
 }
 
-.float{
+.float {
     position: absolute;
-    background-color:rgba(53, 53, 53, 0.75);
+    background-color: rgba(53, 53, 53, 0.75);
     backdrop-filter: blur(50%);
     z-index: 999;
-    padding:7px 14px;
+    padding: 7px 14px;
     color: #ffffff;
     border-radius: 12px;
     outline: #ffffff;
@@ -207,21 +229,21 @@ text-align: left;
     outline-offset: 1em;
 }
 
-.bold{
-    font-weight:900;
+.bold {
+    font-weight: 900;
 }
 
-.large{
+.large {
     font-size: 2.5em;
 }
 
-.btn-1{
+.btn-1 {
     top: 150px;
     right: -25px;
 }
 
-.btn-2{
-    bottom:75px;
+.btn-2 {
+    bottom: 75px;
     left: -50px;
     display: flex;
     justify-content: space-evenly;
@@ -232,19 +254,19 @@ text-align: left;
     padding-bottom: unset;
 }
 
-.float-btn-text{
+.float-btn-text {
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.75em;
 }
 
-#orange-circle{
+#orange-circle {
     background-color: #E6533C;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.small{
+.small {
     font-size: 1.5em;
 }
 
@@ -253,25 +275,30 @@ text-align: left;
 
 /* Change Habits Part CSS Start */
 
-#change-habits{
+#change-habits {
     margin: 6.25em auto;
+    max-width: 1140px;
     width: 90%;
 }
 
-.change-habits-title, .team-title{
+.change-habits-title,
+.team-title,
+.challange-part-title {
     color: #ffffff;
     font-weight: 900;
     font-size: 3em;
     text-align: center;
 }
 
-.change-habits-subtitle, .team-subtitle{
+.change-habits-subtitle,
+.team-subtitle,
+.challange-part-subtitle {
     color: rgba(255, 255, 255, 0.65);
     text-align: center;
     margin: 14px 0;
 }
 
-.card-container{
+.card-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -279,7 +306,7 @@ text-align: left;
     margin-top: 3.3em;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,17 +314,17 @@ text-align: left;
     gap: 1em;
 }
 
-.card-img{
+.card-img {
     border-radius: 50%;
 }
 
-.card-title{
+.card-title {
     font-size: 1.2em;
     color: #ffffff;
     font-weight: 500;
 }
 
-.card-subtitle{
+.card-subtitle {
     color: rgba(255, 255, 255, 0.65);
     text-align: center;
 }
@@ -308,8 +335,9 @@ text-align: left;
 
 /* Run Extra Miles Part CSS Start */
 
-#extra-mile{
+#extra-mile {
     display: flex;
+    max-width: 1140px;
     width: 90%;
     margin: 0 auto 6.25em;
     background-color: rgba(34, 34, 34, 1);
@@ -320,26 +348,27 @@ text-align: left;
     padding: 2.5625em 0;
 }
 
-.run-text{
+.run-text {
     width: 443px;
     margin-left: 3.375em;
 }
 
 
-.extra-mile-title{
+.extra-mile-title {
     color: #ffffff;
     font-weight: 900;
     font-size: 3em;
 }
 
-.extra-mile-subtitle{
+.extra-mile-subtitle {
     color: rgba(255, 255, 255, 0.65);
-    margin:14px 0;
+    margin: 14px 0;
     font-size: 0.875em;
 }
 
 
-.orange-btn-2,.calculate-btn{
+.orange-btn-2,
+.calculate-btn {
     background-color: #E6533C;
     border-radius: 50px;
     padding: 16px 71px;
@@ -352,7 +381,7 @@ text-align: left;
     margin-top: 2rem;
 }
 
-.run-img-container{
+.run-img-container {
     border-radius: 18px;
     margin-right: 2em;
     width: 22rem;
@@ -360,16 +389,16 @@ text-align: left;
 }
 
 
-.run-img{
-   width: 100%;
-   height: 100%;
-   object-fit: none;
-   object-position: 67% 34%;
-   border-radius: 18px;
-   -webkit-border-radius: 18px;
-   -moz-border-radius: 18px;
-   -ms-border-radius: 18px;
-   -o-border-radius: 18px;
+.run-img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: 67% 34%;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
 }
 
 /* Run Extra Miles Part CSS End */
@@ -377,33 +406,34 @@ text-align: left;
 
 /* Team Part CSS Start */
 
-#team{
+#team {
+    max-width: 1140px;
     width: 90%;
     margin: 0 auto 6.25em;
 
 }
 
-.team-member-container{
+.team-member-container {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1.25rem;
-    background:rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.25);
     padding: 1.25rem;
     border-radius: 18px;
     margin-top: 3.5rem;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.trainer{
-    width: 22.5vw;
+.trainer {
+    width: 24.5vw;
     height: 16rem;
     position: relative;
 }
 
 
-.trainer-img{
+.trainer-img {
     width: 100%;
     height: 100%;
     border-radius: 18px;
@@ -411,19 +441,20 @@ text-align: left;
 }
 
 
-.trainer-name, .trainer-deg{
+.trainer-name,
+.trainer-deg {
     position: absolute;
     margin-left: 1.5rem;
 }
 
-.trainer-name{
+.trainer-name {
     bottom: 1.5rem;
     color: #ffffff;
     font-size: 20px;
     font-weight: 900;
 }
 
-.trainer-deg{
+.trainer-deg {
     bottom: 0.25rem;
     color: rgba(255, 255, 255, 0.65);
     font-size: 14px;
@@ -433,17 +464,28 @@ text-align: left;
 
 /* Footer Part CSS Start */
 
-footer{
-    width: 90%;
+footer {
+    width: 100vw;
+    max-width: none;
+    margin: 0 calc(-50vw + 50%);
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 66px 0 10px 0;
+}
+
+.footer-content{
+    max-width: 1140px;
+    width: 90vw;
     margin: 0 auto 2rem;
     display: flex;
     flex-direction: column;
+    
 }
 
-.footer-title{
+.footer-title {
     color: rgba(230, 83, 60, 1);
     font-size: 4.25rem;
-    font-weight:900;
+    font-weight: 900;
     font-style: italic;
 }
 
@@ -452,76 +494,96 @@ footer{
     font-size: 14px;
 }
 
-.footer-subtitle{
+.footer-subtitle {
     font-size: 2rem;
     color: #ffffff;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-footer ul{
+footer ul {
     color: rgba(255, 255, 255, 0.65);
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-footer ul li{
+footer ul li {
     list-style: none;
 
 }
 
-.footer-top{
+.footer-top {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-top div:first-of-type{
+.footer-top div:first-of-type {
     width: 40%;
 }
 
-hr{
+hr {
     margin: 5rem 0 2rem;
 }
 
-.copyright{
+.copyright {
     color: rgba(255, 255, 255, 0.65);
     text-align: center;
 }
 
 /* Footer Part CSS End */
 
-/* Challange Part */
+/* Challange Part Start */
+
+#challange-part{
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+}
+
+.challange-part-title,
+.challange-part-subtitle {
+    text-align: left;
+    margin-left: 12vw;
+}
+
+.challange-part-subtitle {
+    margin-bottom: 5.5rem;
+}
+
 
 #BMI-calculator-container {
 
     width: 100vw;
     max-width: none;
-    background-color: #2d2d2d;
     margin: 0 calc(-50vw + 50%);
     margin-bottom: 6.25em;
 
+    background-color: #2d2d2d;
 
 
 }
 
-.inner-container{
+.inner-container {
     max-width: 1140px;
+    width: 90%;
     display: flex;
     justify-content: center;
     margin: auto;
+
 }
 
-.bmi-chart, .bmi-calculator {
+.bmi-chart,
+.bmi-calculator {
     padding: 20px;
     border-radius: 10px;
     width: 40%;
 }
 
-.bmi-calculator{
+.bmi-calculator {
     width: 60%;
 }
 
-.bmi-title{
+.bmi-title {
     font-size: 28px;
     font-weight: 900;
     color: #ffffff;
@@ -529,7 +591,7 @@ hr{
     margin: 52px 0;
 }
 
-.bmi-subtitle{
+.bmi-subtitle {
     color: rgba(255, 255, 255, 0.65);
     margin-bottom: 20px;
     margin-top: -10px;
@@ -542,57 +604,397 @@ table {
     border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #444;
 }
 
-th{
+th {
     color: #ffffff;
 }
 
-td{
+td {
     color: rgba(255, 255, 255, 0.65);
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: left;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
 }
 
 form {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem; 
+    gap: 0.5rem;
     justify-content: space-between;
 
 }
 
-input, select {
+input,
+select {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #444;
     background-color: #333;
-    color: #fff;
-    width: 45% !important;
+    color: rgba(255, 255, 255, 0.65);
+    width: 45%;
+    line-height: 1.5rem;
 
 }
 
-select:not(:last-of-type){
+input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+select:not(:last-of-type) {
     width: 48% !important;
 }
 
- .block{
+.block {
     width: 100% !important;
     display: block !important;
 }
 
 
-.calculate-btn{
+.calculate-btn {
     margin-bottom: 3.35rem;
 }
 
 button:hover {
     background-color: #e04420;
+}
+
+/* Challange Part End*/
+
+
+
+
+/* CSS for Mobile Responsive */
+
+@media screen and (max-width:576px) {
+
+    body{
+        width: 100vw;
+    }
+
+    header{
+        width: 100vw;
+        position: relative;
+    }
+    main{
+        width: 100vw;
+    }
+
+    .inst-name{
+        font-size: 2.25rem;
+    }
+
+    .hidden-if-responsive {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        display: none;
+    }
+
+    .hidden-if-fullview {
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        vertical-align: middle !important;
+        padding: auto;
+        margin: auto;
+        overflow:auto;
+        clip:auto;
+        white-space: nowrap;
+        border-radius: 25px;
+        
+    }
+
+    #home{
+        flex-direction: column;
+        max-width: 100vw;
+        padding: 10%;
+        margin: auto;
+        gap: 3rem;
+    }
+
+    .home-left {
+        width: 100vw;
+        padding:0 20px;
+    }
+    
+    .home-title {
+        width: 100%;
+    }
+
+    .home-subtitle {
+        width: 100%;
+        margin: 1.75em 0;
+    }
+
+    .big-text {
+        font-size: 2.25rem;
+    }
+
+    .floating-text {
+        font-size: 1.75em;
+        margin: 0;
+        z-index: 99;
+    }
+
+    .orange-btn {
+        border-radius: 42px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    
+    .download-btn {
+        border-radius: 42px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .home-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-btn {
+        position: absolute;
+        width: 20px;
+        top: 52.5%;
+        left: 9%;
+        z-index: 9999;
+    }
+    
+    .home-img {
+        height: 100%;
+    }
+    
+    
+    
+    
+    
+    .large {
+        font-size: 1.875rem;
+    }
+    
+    .btn-1 {
+        top: 50px;
+        right: 10px;
+    }
+    
+    .btn-2 {
+        bottom: 225px;
+        left: 10px;
+    }
+    
+    .float-btn-text {
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 0.75em;
+    }
+    
+    #orange-circle {
+        background-color: #E6533C;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .small {
+        font-size: 1.5em;
+    }
+
+   
+
+    #extra-mile{
+        flex-direction: column;
+        padding: auto;
+        margin: 0 auto 6.25em;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        width: 100vw;
+        padding: 1.8rem;
+    }
+
+    .run-text {
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .extra-mile-title{
+        font-size: 2rem;
+    }
+
+    .orange-btn-2{
+        width: 100%;
+    }
+
+    .run-img-container{
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+    }
+
+    .run-img {
+        object-fit:cover;
+        object-position: 50% 25%;
+    }
+    
+
+    #change-habits{
+        width: 100vw;
+        margin: 5em auto;
+
+    }
+
+    #change-habits .card-container{
+        width: 100vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    .card{
+        width: 100vw;
+        margin: auto;
+    }
+
+    .card-subtitle{
+        text-align: center;
+        margin:5px 54px;
+    }
+   
+    .change-habits-title{
+        font-size: 2rem;
+    }
+
+    .change-habits-subtitle{
+        font-size: 0.75rem;
+        margin-bottom: 56px;
+       
+    }
+
+    #challange-part{
+        width: 100vw;
+    }
+
+    .challange-part-title,
+    .challange-part-subtitle {
+    text-align: left;
+    margin: 30px 20px 32px;
+}
+
+.challange-part-title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    
+}
+
+.challange-part-subtitle{
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+
+}
+    .inner-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bmi-title{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .bmi-chart, .bmi-calculator{
+        width: 100vw;
+        margin: auto;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    input,
+    select{
+        width: 43vw !important;
+        display: inline;
+    }
+
+    #team{
+        width: 100vw;
+        margin: auto;
+    }
+
+    .team-title{
+        font-size: 2rem;
+    }
+
+    .team-title, .team-subtitle{
+        margin: 0 42px;
+    }
+
+    
+
+    .team-member-container{
+        flex-direction: column;
+    }
+
+    .trainer{
+        width: 100%;
+    }
+
+    body{
+        width: 100vw;
+        margin: auto;
+    }
+
+   
+    footer{
+        width: 100vw;
+        margin:2rem auto 0;
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-title{
+        font-size: 3rem;
+    }
+
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-top div:first-of-type {
+        width: 100%;
+    }
+
+    .footer-subtitle{
+        margin-bottom: 2rem;
+    }
+
+    .copyright{
+        text-align: left;
+    }
 }
